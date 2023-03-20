@@ -3,6 +3,10 @@
   functions = "netlify/functions"
   publish = "public"
 
+[build.environment]
+  NODE_VERSION = "18.15.0"
+  NPM_FLAGS = "--legacy-peer-deps"
+
 [[plugins]]
   package = "@netlify/plugin-gatsby"
 
